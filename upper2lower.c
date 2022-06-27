@@ -1,18 +1,21 @@
-//WAP to entered character is in lower case then convert it into upper case and if it is a lower case character then convert it into upper case.
-#include <stdio.h>
+//WAP to read a character in upper case and then print in lower case.
+
+ #include <stdio.h>
 
 int main()
 {
     char ch;
-    printf("\nEnter an char value : ");
-    scanf("%c",&ch);
     
-    if(ch >= 'A' && ch<= 'Z'){
-        printf("\nThe entered character is in upper case. In lower case it is : %c",(ch+32));
-    }
-    else{
-       printf("\nThe entered character is in lower case. In upper case it is : %c",(ch-32));
-    }
-
+    printf("\nEnter the character in upper case : ");
+    scanf("%c",&ch);
+    printf("\nthe the character in lower case is : %c",ch + 32);
     return 0;
 }
+
+/*
+output
+
+Enter the character in upper case : A
+
+the the character in lower case is : a
+*/
